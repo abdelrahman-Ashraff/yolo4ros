@@ -4,7 +4,7 @@ Link for yolov3.weights =
 
 ### To-do:
 ~~1. Add BEV code and test on given images~~ <br>
-~~2. Transform objects locations into distances and angles~~
+~~2. Transform objects locations into distances and angles~~ <br>
 3. Configure YOLO to work on ROS efficiently
 
 # Acknowledgments
