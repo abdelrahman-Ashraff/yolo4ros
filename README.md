@@ -9,5 +9,5 @@ Download yolov3.weights [here](https://drive.google.com/file/d/1n9MvXffqNCDBZv-9
 3. Configure YOLO to work on ROS efficiently
 
 # Acknowledgments
-- [PyImageSearch Tutorial](https://www.pyimagesearch.com/2018/11/12/yolo-object-detection-with-opencv/)
 - [AMR Semantic Segmentation](https://github.com/jdgalviss/AMR_semantic_segmentation)
+- [PyImageSearch Tutorial](https://www.pyimagesearch.com/2018/11/12/yolo-object-detection-with-opencv/)
