@@ -1,6 +1,7 @@
 # yolo4ros
 YOLO implementation for ROS -- Under Development
-Link for yolov3.weights = 
+
+Download yolov3.weights [here](https://drive.google.com/file/d/1n9MvXffqNCDBZv-9UEk26hlNVuhFQNpK/view?usp=sharing), add it under /yolo-coco
 
 ### To-do:
 ~~1. Add BEV code and test on given images~~ <br>
