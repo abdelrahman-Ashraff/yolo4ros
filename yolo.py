@@ -85,14 +85,14 @@ img = image.copy()
 
 # Getting the warped center
 ## The bottom's center pt is the location of the camera sensor
-## In pixels
+## In pixels (considering dead_zone in y-component)
 original_center = np.array([[[img_size[0]/2,img_size[1]]]],dtype=np.float32)
 warped_center = cv2.perspectiveTransform(original_center, M)[0][0] 
 warped_center[1] = warped_center[1] + dead_zone * pixel_per_meter_y
 
 ## In Meters
 warped_center_x = warped_center[0] / pixel_per_meter_x
-warped_center_y = warped_center[1] / pixel_per_meter_y + dead_zone
+warped_center_y = warped_center[1] / pixel_per_meter_y
 
 # loop over each of the layer outputs
 for output in layerOutputs:
@@ -234,8 +234,8 @@ else:
 # plt2 = fig.add_subplot(122)
 
 ## >> Figure 1
-# # image = cv2.resize(image, (680, 420))
-# # img = cv2.resize(img,(680, 420))
+# image = cv2.resize(image, (680, 420))
+# img = cv2.resize(img,(680, 420))
 # c1 = plt1.imshow(cv2.cvtColor(img,cv2.COLOR_BGR2RGB),
 # 				vmin = 0, vmax = 5)
 # plt1.set_title('Original Image', fontweight='heavy')
